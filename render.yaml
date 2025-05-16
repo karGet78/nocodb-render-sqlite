@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: nocodb-cse
+    env: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: NC_DB
+        value: sqlite
